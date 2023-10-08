@@ -284,14 +284,15 @@ ol {
 }
 
 .search-form__checkbox:active + .search-form__pseudo-checkbox::before {
-  content: "";
+  content: '';
+  display: flex;
   width: 15px;
   height: 15px;
   background-color: white;
-  position: absolute;
+  position: sticky;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-10%, 10%);
 }
 
 .search-form__label:hover .search-form__label-checkbox-text {
