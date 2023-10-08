@@ -16,6 +16,7 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
 }
 
 h1,
@@ -44,7 +45,6 @@ ol {
   width: 1140px;
   height: 534px;
   gap: 30px;
-  margin: 133px 30px;
 }
 
 .search-form {
