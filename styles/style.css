@@ -294,7 +294,7 @@ ol {
   transform: translate(-50%, -50%);
 }
 
-.search-form__label:hover +.search-form__label-checkbox-text {
+.search-form__label:hover .search-form__label-checkbox-text {
   text-decoration: underline;
   text-underline-offset: 5px;
 }
