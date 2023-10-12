@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   display: flex;
@@ -103,7 +103,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
@@ -113,7 +113,7 @@ ol {
 }
 
 .title {
-  font-family: Oswald, sans-serif;
+  font-family: Oswald, Arial, sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 70px;
@@ -147,7 +147,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald, sans-serif;
+  font-family: Oswald, Arial, sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 30px;
@@ -158,7 +158,7 @@ ol {
 
 .content__video-card-description {
   padding-top: 6px;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 16px;
@@ -182,7 +182,7 @@ ol {
   border: 1px solid #FFFFFF;
   gap: 10px;
   color: white;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.6px;
@@ -231,7 +231,7 @@ ol {
   width: 225px;
   height: 27px;
   gap: 10px;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: white;
@@ -292,6 +292,17 @@ ol {
   border-color: white;
   border-style: solid;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-form__checkbox:checked+.search-form__pseudo-checkbox::before {
+  content: '';
+  display: flex;
+  width: 15px;
+  height: 15px;
+  background-color: white;
 }
 
 .search-form__checkbox:active+.search-form__pseudo-checkbox::before {
@@ -300,10 +311,6 @@ ol {
   width: 15px;
   height: 15px;
   background-color: white;
-  position: sticky;
-  top: 50%;
-  left: 50%;
-  transform: translate(-10%, 10%);
 }
 
 .search-form__label:hover .search-form__label-checkbox-text {
@@ -312,7 +319,7 @@ ol {
 }
 
 .search-form__label-checkbox-text {
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.5px;
